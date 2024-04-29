@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>Doodle Jump</title>
+        <link rel="stylesheet" href="doodlejump.css">
+        <script src="doodlejump.js"></script>
+        <style>
+            body {
+                background-color: rgb(30, 129, 199);
+            }
+            @font-face {
+            font-family: wiggly;
+            src: url(Wigglye.ttf);
+        }
+        * {
+            font-family: wiggly;
+        } 
+        .social-buttons a {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        .social-buttons a img {
+            width: 50px;
+            height: 50px;
+        }
+        .social-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .picture {
+            width: 500px; /* Adjust picture size as needed */
+            height: auto;
+            border-radius: 0;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+            z-index: 1; /* Ensure picture is above buttons */
+        }
+        .text {
+            width: 500px;
+            height: auto;
+            top:20%;
+            left:15%;
+            position: absolute;
+            font-size: 50px;
+            transform: translate(-40%, -35%);
+            z-index: 1;
+            font-family: wiggly;
+            color: #7effaf;
+            outline: black;
+        }
+        .picture2 {
+            width: 500px; /* Adjust picture size as needed */
+            height: auto;
+            border-radius: 0;
+            position: absolute;
+            top: 230%;
+            left: 25%;
+            transform: translate(-25%, -90%);
+            z-index: 1; /* Ensure picture is above buttons */
+        }
+
+        </style>
+    </head>
+    <body>
+        <canvas id="board"></canvas>
+        <div class="social-buttons">
+            <a href="https://pump.fun/profile/6G88JivjrC4yfSdXU6C4eLFz5WZ93GfgXdsLjcss5VN9"><img src="pump.webp" alt="PumpFun"></a>
+            <a href="https://twitter.com/Catwifnoodlehat"><img src="twitter.webp" alt="Twitter"></a>
+            <a href="https://t.me/DegenFrogzPortal"><img src="telegram.webp" alt="Telegram"></a>
+        </div>
+            <img class="picture" src="FRSGS.webp" alt="Center Picture">
+        <div class="text" alt="text">
+            <h2>Just a degen frog on solana</h2>
+            <img class="picture2" src="picture2.webp" alt="picture">
+        </div>
+            
+    </body>
+</html>
